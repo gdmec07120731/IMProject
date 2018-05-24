@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".mvp.ui.MainActivity">
+
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        />
+    <Button
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/connectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接"
+     />
+
+    <Button
+        android:layout_below="@+id/connectBtn"
+        android:id="@+id/disconnectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="断开"
+        />
+
+    <Button
+        android:layout_below="@+id/disconnectBtn"
+        android:id="@+id/talkList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="聊天列表"
+        />
+    <Button
+        android:layout_below="@+id/talkList"
+        android:id="@+id/talk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="和faker聊天"
+        />
+
+</RelativeLayout>
